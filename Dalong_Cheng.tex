@@ -1,0 +1,198 @@
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=mygreylink     % can put red here to visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.30}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\LARGE Dalong Cheng} & \href{mailto:dalongc@andrew.cmu.edu}{dalongc@andrew.cmu.edu}\\
+	{\footnotesize \texttt{}} & {Tel: 1-412-519-7230} \\
+	\end{tabular*}
+\\
+\vspace{0.1in}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+	\begin{itemize}
+		\item
+            \ressubheading{\href{http://www.cmu.edu}{Carnegie Mellon University}}{Advisor: \href{http://www.cs.cmu.edu/~rbd}{Roger Dannenberg}}{{Master of Science in Computer Science}}{Jun. 2011 -- Present}
+        \item	
+            \ressubheading{\href{http://ev.buaa.edu.cn}{Beijing University of Aeronautics and Astronautics}}{}{{Bachelor of Science in Computer Science}}{Sep.2006 -- Jun.2011}
+				
+\begin{comment}
+		\item
+			\ressubheading{\href{http://bcc.billings.k12.mt.us/}{Billings Career Center}}{Billings, MT}{\href{http://www.cisco.com/web/learning/netacad/index.html}{Cisco Networking Academy}; GPA:3.33}{Aug. 2002 - May 2003}
+				{ \footnotesize
+				\begin{itemize}
+				\resitem{Graduated \href{http://www.cisco.com/web/learning/netacad/index.html}{Cisco Semester Four} comprising of coursework in networking infrastructures including LAN and WAN design and implementation}
+				\end{itemize}
+				}
+\begin{comment}
+		\item
+			\ressubheading{\href{http://bcc.billings.k12.mt.us/}{Billings Career Center}}{Billings, MT}{\href{http://www.cisco.com/web/learning/netacad/index.html}{Cisco Networking Academy}; GPA:3.33}{Aug. 2002 - May 2003}
+				{ \footnotesize
+				\begin{itemize}
+				\resitem{Graduated \href{http://www.cisco.com/web/learning/netacad/index.html}{Cisco Semester Four} comprising of coursework in networking infrastructures including LAN and WAN design and implementation}
+				\end{itemize}
+				}
+\end{comment}
+	\end{itemize} % End Education list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{{Skills}}
+	\begin{description}
+        \item[Languages:] { \footnotesize C/C++, Python, Java, PHP, Javascript, HTML, CSS, \href{http://www.latex-project.org/}{\LaTeX}, MATLAB}
+        \item[Web Development:] {Proficient in Linux+Apache+Mysql+PHP(LAMP) Development}
+		\item[Computer and OS:] { \footnotesize Proficient in Linux Administration, Familiar with Android Development}
+		
+	\end{description} % End Skills list
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Work and Project Experience}
+	\begin{itemize}
+		\item 
+			\ressubheading{{Oracle Software and Research Center}}{Beijing, China}{Software Engineer}{Sep.2010 -- Jul.2011}
+            { \footnotesize
+				\begin{itemize}
+					\resitem{Do some system level programming for Solaris system}
+					\resitem{Administrate Sun Solaris servers in DataLab}
+					\resitem{Setup and develop a patch for Bugzilla for internal usage}
+				\end{itemize}
+			}
+		\item
+			\ressubheading{\href{http://www.imelody.fm}{iMelody.FM}}{Beijing, China}{Chief Developer}{Sep.2010 -- Jun.2011}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Design and Develop online music storage website with one of my friend }
+					\resitem{Design and implement from database to frontend}
+                    \resitem{The first of this kind website in Hongkong}
+				\end{itemize}
+          		}
+		\item 
+			\ressubheading{Google Summer of Code 2010}{}{Devloper}{May.2010 -- Sep.2010}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Implement a algorithm for Opticks Open Source community}
+                    \resitem{Get Google 5000 Dollar Reward}
+				\end{itemize}
+				}
+
+		\item			
+			\ressubheading{Mozilla Corporation}{}{Web Developer(Intern)}{Jun.2008 -- Sep.2008}
+				{ \footnotesize				
+				\begin{itemize}
+					\item Develop a Chinese Edition Firefox, which involve developing and integrating serveral addons for Firefox
+				\end{itemize}
+				}
+
+	\end{itemize}  % End Experience list
+
+\resheading{Research Experience}
+	\begin{itemize}
+		\item 
+			\ressubheading{Fast Fixed-point algorithm for Blind Separation of Nonlinear Autocorrlelation}{}{Zhenwei Shi, Dalong Cheng, Zhiguo Jiang, Journal of Neurocomputing 2010}{}
+            { \footnotesize
+				\begin{itemize}
+					\resitem{Key Word: Signal Processing, Blind Source Separation}
+				\end{itemize}
+			}
+		\item
+			\ressubheading{A Method of Automatically Estimating the Regularization Parameter
+}{}{Dalong Cheng, Zhenwei Shi, Xueyan Tan, 2010 International Conference of Natural Computation}{}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Key Word: Non-negative Matrix Factorization, Automatic Parameter Estimation}
+				\end{itemize}
+          		}
+		\item 
+			\ressubheading{Natural Gradient for Temporally Independent Component Analysis}{}{Zhenwei Shi, Dalong Cheng, Xueyan Tan, 2010 International Conference of Natural Computation}{}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Key Word: Independent Component Analysis}
+				\end{itemize}
+				}
+
+		\item 
+			\ressubheading{Automatic Estimation of Regularization Parameter for Hyperspectral image unmixing
+}{}{Patent Serial NO.: 200910236089.0}{}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{}
+				\end{itemize}
+				}
+
+	\end{itemize}  % End Experience list
+
+\resheading{{Awords and Honors}}
+	\begin{description}
+        \item[2010] {Google Summer of Code 2010(5000 USD)}
+        \item[2010] {Beijing Outstanding Gradute}
+	    \item[2010] {Excellent Bachelor Thesis}
+        \item[2009] {Airbus Student Scholarship}
+        \item[2009] {Student Research Training Program}
+        \item[2009] {Excellent Student Award}
+        \item[2008] {Scholarship for Excellent Individual(2000 RMB)}
+        \item[2008] {Excellent Student Award}
+        \item[2008] {Outstanding Olympics Volunteer}
+        \item[2007] {Student Research Training Program Fund(5000 RMB)}
+        \item[2007] {Second Grade Scholarship for Excellent Individual of Beihang University(1000 RMB)}
+	
+	\end{description}
+    
+\resheading{{Special}}
+	\begin{description}
+        \item[] {Proficient in Violin Performance}
+        \item[] {\href{http://www.youtube.com/watch?v=zGBpT7A_nYM}{Self Introduction Video on YouTube(Recorded on 2010)}}
+	
+	\end{description}
+%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+

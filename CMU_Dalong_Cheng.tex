@@ -35,7 +35,7 @@
 \newcommand{\ressubheading}[4]{
 \begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
+		{#3}{} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 %-----------------------------------------------------------
 
@@ -63,9 +63,11 @@
 \resheading{Education}
   \begin{itemize}
 		\item
-      \ressubheading{\href{http://www.cmu.edu}{Carnegie Mellon University}}{GPA: 3.7}{{Master of Science in Computer Science}}{Sep. 2011 -- Dec. 2013}
+      \ressubheading{\href{http://www.cmu.edu}{Carnegie Mellon University}} {} 
+      {{Music Technology}{\small (Joint Program of Computer Science and Music)}}{Sep. 2011 -- Dec. 2013}
     \item	
-      \ressubheading{\href{http://ev.buaa.edu.cn}{Beijing University of Aeronautics and Astronautics}}{GPA:3.5}{{Bachelor of Science in Computer Science}}{Sep.2006 -- Jun.2010}
+      \ressubheading{\href{http://ev.buaa.edu.cn}{Beijing University of Aeronautics and Astronautics}}
+      {}{Software Engineering}{Sep.2006 -- Jun.2010}
 	\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -78,7 +80,7 @@
 \resheading{Work and Project Experience}
 	\begin{itemize}
     \item
-      \ressubheading{\href{http://www.citadel.com}{Citadel Investment Group}}{Chicago}{Financial Technoloy Associate}{Jun.2013 -- Aug.2013}
+      \ressubheading{\href{http://www.citadel.com}{Citadel Investment Group}}{Chicago}{Financial Technoloy Associate}{Jun.2013 -- Present}
       { \footnotesize
 				\begin{itemize}
 					\resitem{Intern in High Frequency Trading team}
@@ -86,14 +88,14 @@
 				\end{itemize}
 			}
     \item 
-			\ressubheading{Teaching Assistant for Financial Computing}{}{Teaching Assistant for CMU Master in Computational Finance Program}{Mar.2013 -- Present}
+			\ressubheading{Teaching Assistant for Financial Computing}{}{Teaching Assistant for CMU Computational Finance Program}{Mar.2013 -- Dec.2013}
             { \footnotesize
 				\begin{itemize}
           \resitem{Teach students about how financial industry use C++ to design various models}
 				\end{itemize}
 			}
     \item 
-			\ressubheading{410 Operating System Kernel}{}{Individual Project}{Sep.2011 -- Jul.2012}
+			\ressubheading{410 Operating System Kernel}{}{Individual Project}{Jan.2012 -- Jul.2012}
             { \footnotesize
 				\begin{itemize}
           \resitem{Implement a solid kernel with 28 basic system call from scratch}
@@ -120,13 +122,6 @@
 
 \resheading{Research Experience}
 	\begin{itemize}
-		\item 
-			\ressubheading{Fast Fixed-point Algorithm for Blind Separation of Nonlinear Autocorrlelation}{}{Zhenwei Shi, Dalong Cheng, Zhiguo Jiang, Journal of Neurocomputing 2010}{}
-            { \footnotesize
-				\begin{itemize}
-					\resitem{Key Word: Signal Processing, Blind Source Separation}
-				\end{itemize}
-			}
 		\item
 			\ressubheading{a Method of Automatically Estimating the Regularization Parameter
 }{}{Dalong Cheng, Zhenwei Shi, Xueyan Tan, 2010 International Conference of Natural Computation}{}
@@ -142,10 +137,6 @@
 					\resitem{Key Word: Independent Component Analysis}
 				\end{itemize}
 				}
-
-		\item 
-			\ressubheading{Automatic Estimation of Regularization Parameter for Hyperspectral Image Unmixing
-}{}{Patent Serial NO.: 200910236089.0}{}
 
 	\end{itemize}  % End Experience list
 
